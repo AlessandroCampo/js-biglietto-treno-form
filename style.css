@@ -1,0 +1,16 @@
+.bg-purple {
+    background-color: #b91450;
+}
+
+.text-purple {
+    color: #b91450;
+}
+
+.border-purple {
+    border: 2px solid #b91450;
+    border-radius: 15px;
+}
+
+button {
+    background-color: lightgray !important;
+}

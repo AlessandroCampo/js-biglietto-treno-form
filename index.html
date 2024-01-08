@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-purple">
+    <div class="container d-flex align-items-center flex-column">
+        <h2 class="text-white my-4"> CALCOLA IL PREZZO DEL TUO BIGILIETTO </h2>
+        <div class="container d-flex justify-content-center  p-4 fw-bold fs-5 bg-white">
+            <div class="d-flex flex-column w-25 align-items-center">
+                <label for="id" class="text-purple"> Nome e Cognome </label>
+                <input type="text" name="full_name" id="name" class="my-3 text-center fw-bold w-75 border-purple">
+            </div>
+            <div class="d-flex flex-column w-25 text-center align-items-center">
+                <label for="id" class="text-purple"> Km da percorrere </label>
+                <input type="text" name="distance" id="distance" class="my-3 text-center fw-bold w-75 border-purple">
+            </div>
+            <div class="d-flex flex-column w-25 text-center align-items-center">
+                <label for="age" class="text-purple"> Fascia età </label>
+                <select name="age" id="age" class="my-3 text-center fw-bold border-purple">
+                    <option value="underage"> Minorenne </option>
+                    <option value="adult"> Maggiorenne </option>
+                    <option value="o65"> Over 65 </option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons bg-white w-100 d-flex justify-content-center gap-4 pb-4 pt-3">
+            <button class="btn btn-light text-purple border-purple" id="generate"> Genera </button>
+            <button class="btn btn-light text-purple border-purple" id="undo"> Annulla </button>
+        </div>
+
+        <div>
+
+        </div>
+        <h2 class="text-white my-4"> IL TUO BIGLIETTO </h2>
+        <div class="container d-flex justify-content-center  p-4 fs-5 bg-white d-none" id="ticket-container">
+            <div>
+                <h4 class="text-center mb-4">Dettagli Passeggero</h4>
+                <div id="ticket" class="d-flex border border-secondary">
+                    <div class="bg-secondary p-4 text-center fw-bold">
+                        NOME PASSEGGERO <br>
+                        <span id="passenger-name" class> Jon Snow</span>
+                    </div>
+                    <div class="bg-white d-flex gap-5 p-3">
+                        <div class="d-flex flex-column justify-content-around align-items-center">
+                            <div class="fw-bold">
+                                Offerta
+                            </div>
+                            <div id="offer-type">
+                                Biglietto Standard
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-around align-items-center">
+                            <div class="fw-bold">
+                                Carrozza
+                            </div>
+                            <div id="carriage">
+                                5
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-around align-items-center">
+                            <div class="fw-bold">
+                                Codice CP
+                            </div>
+                            <div id="code">
+                                92911
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-around align-items-center">
+                            <div class="fw-bold">
+                                Prezzo Biglietto
+                            </div>
+                            <div id="ticket-price">
+                                2,10 euro
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
